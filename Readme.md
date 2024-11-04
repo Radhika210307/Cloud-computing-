@@ -362,4 +362,5 @@ Screenshot_2024_1104_183758
 
 # book link for reference of VPC given below (page 55 )
 {
+   https://www.scribd.com/document/454176546/AWS-lab-practice-guide-by-www-server-computer-com-v1 }
 
