@@ -292,7 +292,74 @@ http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kuber
 # in browser replace server ip with public ip
 # Now go to above link and replace server_ip with your public ip and it will show you like :
 Screenshot_2024_0923_213426
+# KVM:- Kernel-based Virtual Machine
+It is a technology that allows you to run multiple operating systems on a single physical machine. It turns the Linux kernel into a hypervisor, enabling virtual machines (VMs) to operate as if they were separate computers.
 
-KVM
-Openstack
-QEMU
+Screenshot_2024_1104_185025
+
+# Openstack :-
+OpenStack is an open-source platform that lets you create and manage cloud computing services. It allows users to control computing power, storage, and networking in a data center through a web interface. Essentially, it helps organizations build their own private or public clouds, making it easier to deploy and manage applications.
+
+![image](https://github.com/user-attachments/assets/379c2be0-0e75-46b0-b4ce-e4d58721dadb)
+
+
+# QEMU
+QEMU is an open-source emulator and virtualization tool that allows you to run different operating systems on a host machine.
+
+![image](https://github.com/user-attachments/assets/81f285be-3cbb-4406-a63f-90bab3d7ce37)
+
+
+# VPC
+•Go to VPC and create a VPC then we have to create 4 subnets , where 2 subnets are private and other two are public .
+
+
+
+
+# create gateways:-
+1st create INTERNET GATWAY , whic is to be connected to your VPC which is created earliy.
+
+Screenshot_2024_1104_181831
+
+•2nd we have to create VPG virtual privaye gate, and connect to VPC .
+
+# create route tables
+•Now we have to go to the route table and create 2 route table , one for IGW and another for VGW .
+
+Screenshot_2024_1104_181847
+
+•Now we have to connect two public subnet in myigw and on other we have to add the private subnets .
+
+Screenshot_2024_1104_182425
+
+# create instances
+* now we have to create two instnaces where we have to enable the public IPv4 .
+
+•then on both instance we have to downlaod the web server here i have downlaoded the apache2 server
+
+-- after that i chech that my instances are working or not .
+
+Screenshot_2024_1104_182258
+
+# now we have to create the load balancer
+--where we have to give vpc, aviablity zone of the ec2 instance
+
+•then we have to create the target group where we have to select the two insatance we have create then we have to go to helath check edited option which was present below the load balancer is create ,then edit it as given below image
+
+Screenshot_2024_1104_182902
+
+•after that come to load balancer where we have to select the target group which we have created then make the load balancer , it will look like the given image below .
+
+Screenshot_2024_1104_183106
+
+Screenshot_2024_1104_183126
+
+now put on any one instance write following commands in putty -
+
+htop
+seq 999999999999999999999999999999999999999999999999999999999 > /dev/null &
+htop
+Screenshot_2024_1104_183758
+
+# book link for reference of VPC given below (page 55 )
+{
+
