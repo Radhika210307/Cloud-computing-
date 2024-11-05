@@ -181,7 +181,6 @@ docker run --name docker-nginx -p 80:80 nginx
 # -p specifies the port you are exposing in the format of -p local-machine-port:internal-container-port. In this case, you are mapping port :80 in the container to port :80 on the server.
 # nginx is the name of the image on Docker Hub.
 # now this will show this on your public ip
-Screenshot_2024_0923_210801
 
 # In your terminal, enter CTRL+C to stop the container from running.
 docker ps -a
@@ -203,7 +202,6 @@ cd ~/docker-nginx/html
 # by this you navigate into this
 vi index.html
 # now press i and write your code in html like
-Screenshot_2024_0923_211405
 
 # then press ctrl+c then shift+colon then write wq and enter
 docker run --name docker-nginx -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
@@ -291,11 +289,9 @@ kubectl proxy --address='0.0.0.0' --disable-filter=true &
 http://server_ip:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/workloads?namespace=default
 # in browser replace server ip with public ip
 # Now go to above link and replace server_ip with your public ip and it will show you like :
-Screenshot_2024_0923_213426
-# KVM:- Kernel-based Virtual Machine
-It is a technology that allows you to run multiple operating systems on a single physical machine. It turns the Linux kernel into a hypervisor, enabling virtual machines (VMs) to operate as if they were separate computers.
 
-Screenshot_2024_1104_185025
+# KVM:- Kernel-based Virtual Machine
+It is a technology that allows you to run multiple operating systems on a single physical machine. It turns the Linux kernel into a hypervisor, enabling virtual machines (VMs) to operate as if they were separate computers
 
 # Openstack :-
 OpenStack is an open-source platform that lets you create and manage cloud computing services. It allows users to control computing power, storage, and networking in a data center through a web interface. Essentially, it helps organizations build their own private or public clouds, making it easier to deploy and manage applications.
@@ -318,18 +314,15 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 # create gateways:-
 1st create INTERNET GATWAY , whic is to be connected to your VPC which is created earliy.
 
-Screenshot_2024_1104_181831
 
 •2nd we have to create VPG virtual privaye gate, and connect to VPC .
 
 # create route tables
 •Now we have to go to the route table and create 2 route table , one for IGW and another for VGW .
 
-Screenshot_2024_1104_181847
 
 •Now we have to connect two public subnet in myigw and on other we have to add the private subnets .
 
-Screenshot_2024_1104_182425
 
 # create instances
 * now we have to create two instnaces where we have to enable the public IPv4 .
@@ -338,20 +331,15 @@ Screenshot_2024_1104_182425
 
 -- after that i chech that my instances are working or not .
 
-Screenshot_2024_1104_182258
 
 # now we have to create the load balancer
 --where we have to give vpc, aviablity zone of the ec2 instance
 
 •then we have to create the target group where we have to select the two insatance we have create then we have to go to helath check edited option which was present below the load balancer is create ,then edit it as given below image
 
-Screenshot_2024_1104_182902
 
 •after that come to load balancer where we have to select the target group which we have created then make the load balancer , it will look like the given image below .
 
-Screenshot_2024_1104_183106
-
-Screenshot_2024_1104_183126
 
 now put on any one instance write following commands in putty -
 
