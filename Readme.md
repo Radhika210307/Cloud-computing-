@@ -327,6 +327,8 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 
 # create route tables
 •Now we have to go to the route table and create 2 route table , one for IGW and another for VGW .
+![image](https://github.com/user-attachments/assets/0803fe88-6da4-4444-83f2-ceaf276dea09)
+![image](https://github.com/user-attachments/assets/cc5d46b7-ca45-44b0-a7f0-8313cc23bfb9)
 
 
 •Now we have to connect two public subnet in myigw and on other we have to add the private subnets .
