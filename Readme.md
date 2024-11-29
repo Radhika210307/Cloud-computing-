@@ -316,12 +316,13 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 # create gateways:-
 1st create INTERNET GATWAY , whic is to be connected to your VPC which is created earliy.
 ![image](https://github.com/user-attachments/assets/1a51f3d7-0f6a-40b5-a844-d7c4ae98a383)
-
+![image](https://github.com/user-attachments/assets/3de7437b-f206-4fa8-8c7f-7508348e26d8)
 
 
 •2nd we have to create VPG virtual privaye gate, and connect to VPC .
-![image](https://github.com/user-attachments/assets/3de7437b-f206-4fa8-8c7f-7508348e26d8)
 
+
+![image](https://github.com/user-attachments/assets/4d24c5ee-1305-4df0-9af5-9663c4678d3c)
 
 
 # create route tables
