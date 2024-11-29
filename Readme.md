@@ -320,7 +320,9 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 
 
 •2nd we have to create VPG virtual privaye gate, and connect to VPC .
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/3de7437b-f206-4fa8-8c7f-7508348e26d8)
+
+
 
 # create route tables
 •Now we have to go to the route table and create 2 route table , one for IGW and another for VGW .
