@@ -307,15 +307,17 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 
 # VPC
 •Go to VPC and create a VPC then we have to create 4 subnets , where 2 subnets are private and other two are public .
-![image](https://github.com/user-attachments/assets/83ac3aca-e0aa-4b0c-9c09-226635911a6c)
+
 ![image](https://github.com/user-attachments/assets/08f1ce68-a288-4296-a370-fbf523e13385)
 
+![image](https://github.com/user-attachments/assets/83ac3aca-e0aa-4b0c-9c09-226635911a6c)
 
 
 # create gateways:-
 1st create INTERNET GATWAY , whic is to be connected to your VPC which is created earliy.
+![image](https://github.com/user-attachments/assets/1a51f3d7-0f6a-40b5-a844-d7c4ae98a383)
 
-![image](https://github.com/user-attachments/assets/83ac3aca-e0aa-4b0c-9c09-226635911a6c)
+
 
 •2nd we have to create VPG virtual privaye gate, and connect to VPC .
 ![Uploading image.png…]()
