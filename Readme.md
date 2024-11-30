@@ -391,7 +391,9 @@ Internal load balancers have DNS names, which publicly resolve to the private IP
 **#HOW TO CREATE LOAD BALANCER**
 
 • we have to create the target group where we have to select the two insatance we have create then we have to go to helath check edited option which was present below the load balancer is create ,then edit it as given below image
+
 ![image](https://github.com/user-attachments/assets/f2faed82-0a34-4a0c-be61-5279f9449245)
+
 
 
 •after that come to load balancer where we have to select the target group which we have created then make the load balancer , it will look like the given image below .
@@ -401,12 +403,14 @@ Internal load balancers have DNS names, which publicly resolve to the private IP
 now put on any one instance write following commands in putty -
 
 htop
-seq 99999999999999999999999999999999999999999
-9999999999999999 > /dev/null &
-htop
-Screenshot_2024_1104_183758
 
-# book link for reference of VPC given below (page 55 )
-{
-   https://www.scribd.com/document/454176546/AWS-lab-practice-guide-by-www-server-computer-com-v1 }
+seq
+99999999999999999999999999999999999999999
+9999999999999999 > 
+
+/dev/null &
+
+
+htop
+
 
