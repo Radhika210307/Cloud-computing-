@@ -306,22 +306,23 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 
 
 # VPC
-VPC-VIRTUAL PRIVATE CLOUD (ISOLATED NETWORK)
+**VPC-VIRTUAL PRIVATE CLOUD (ISOLATED NETWORK)**
+
 A virtual private cloud (VPC) is a virtual network dedicated to your AWS account. It is logically isolated from other virtual networks in the AWS Cloud. You can launch your AWS resources, such as Amazon EC2 instances, into your VPC.
 
-image
 
-AWS Console -> Services -> Networking & Content Delivery -> VPC -> Your VPCs
+
+**AWS Console -> Services -> Networking & Content Delivery -> VPC -> Your VPCs**
 
 VPC NAME: my VPC
 
 IPV4 CIDR BLOCK: 10.0.0.0/16
 
-1)CREATE VPC
+**1)CREATE VPC**
 
 ![image](https://github.com/user-attachments/assets/08f1ce68-a288-4296-a370-fbf523e13385)
 
-2)CREATE SUBNETS
+**2)CREATE SUBNETS**
  
   we have to create 4 subnets , where 2 subnets are private and other two are public .
 
@@ -329,7 +330,7 @@ IPV4 CIDR BLOCK: 10.0.0.0/16
 ![image](https://github.com/user-attachments/assets/83ac3aca-e0aa-4b0c-9c09-226635911a6c)
 
 
-# create gateways:-
+# 3)create gateways:-
 1st create INTERNET GATWAY , whic is to be connected to your VPC which is created earliy.
 
 ![image](https://github.com/user-attachments/assets/3de7437b-f206-4fa8-8c7f-7508348e26d8)
@@ -341,16 +342,16 @@ IPV4 CIDR BLOCK: 10.0.0.0/16
 ![image](https://github.com/user-attachments/assets/4d24c5ee-1305-4df0-9af5-9663c4678d3c)
 
 
-# create route tables
+# 4)create route tables
 •Now we have to go to the route table and create 2 route table , one for IGW and another for VGW .
-![image](https://github.com/user-attachments/assets/0803fe88-6da4-4444-83f2-ceaf276dea09)
+
 ![image](https://github.com/user-attachments/assets/cc5d46b7-ca45-44b0-a7f0-8313cc23bfb9)
 
 
 •Now we have to connect two public subnet in myigw and on other we have to add the private subnets .
 
 
-# create instances
+# 5)create instances
 * now we have to create two instnaces where we have to enable the public IPv4 .
 
 •then on both instance we have to downlaod the web server here i have downlaoded the apache2 server
@@ -358,7 +359,7 @@ IPV4 CIDR BLOCK: 10.0.0.0/16
 -- after that i chech that my instances are working or not .
 
 
-# now we have to create the load balancer
+# 6)now we have to create the load balancer
 --where we have to give vpc, aviablity zone of the ec2 instance
 
 •then we have to create the target group where we have to select the two insatance we have create then we have to go to helath check edited option which was present below the load balancer is create ,then edit it as given below image
