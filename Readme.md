@@ -306,9 +306,25 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 
 
 # VPC
-•Go to VPC and create a VPC then we have to create 4 subnets , where 2 subnets are private and other two are public .
+VPC-VIRTUAL PRIVATE CLOUD (ISOLATED NETWORK)
+A virtual private cloud (VPC) is a virtual network dedicated to your AWS account. It is logically isolated from other virtual networks in the AWS Cloud. You can launch your AWS resources, such as Amazon EC2 instances, into your VPC.
+
+image
+
+AWS Console -> Services -> Networking & Content Delivery -> VPC -> Your VPCs
+
+VPC NAME: my VPC
+
+IPV4 CIDR BLOCK: 10.0.0.0/16
+
+1)CREATE VPC
 
 ![image](https://github.com/user-attachments/assets/08f1ce68-a288-4296-a370-fbf523e13385)
+
+2)CREATE SUBNETS
+ 
+  we have to create 4 subnets , where 2 subnets are private and other two are public .
+
 
 ![image](https://github.com/user-attachments/assets/83ac3aca-e0aa-4b0c-9c09-226635911a6c)
 
