@@ -310,6 +310,7 @@ QEMU is an open-source emulator and virtualization tool that allows you to run d
 
 A virtual private cloud (VPC) is a virtual network dedicated to your AWS account. It is logically isolated from other virtual networks in the AWS Cloud. You can launch your AWS resources, such as Amazon EC2 instances, into your VPC.
 
+![image](https://github.com/user-attachments/assets/b68c6617-a24f-424a-9ce1-425f7f0aa20e)
 
 
 **AWS Console -> Services -> Networking & Content Delivery -> VPC -> Your VPCs**
