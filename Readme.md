@@ -368,18 +368,41 @@ Route - 192.168.0.0/16 to VGW
 
 
 # 6)now we have to create the load balancer
---where we have to give vpc, aviablity zone of the ec2 instance
 
-•then we have to create the target group where we have to select the two insatance we have create then we have to go to helath check edited option which was present below the load balancer is create ,then edit it as given below image
+![image](https://github.com/user-attachments/assets/8f7eaca5-4552-4766-ae13-339fc8a24fe8)
+
+Elastic Load Balancing (ELB) is a load-balancing service for Amazon Web Services (AWS) deployments. ELB automatically distributes incoming application traffic and scales resources to meet traffic demands.
+
+A Managed Load Balancing service  Distributes load incoming application traffic across multiple targets, such as amazon EC2 instances, containers, and IP Addresses
+
+ Recognizes and responds to unhealthy instances
+
+ Can be public or internal-facing
+
+ Uses HTTP, HTTPS, TCP, and SSL Protocols
+
+ Each Load Balancer is given a public DNS name
+
+Internet-facing load balancers have DNS names which publicly resolve to the public IP Addresses of the load balancer of the load balancers nodes
+
+Internal load balancers have DNS names, which publicly resolve to the private IP Addresses of the load balancers nodes.
+
+
+**#HOW TO CREATE LOAD BALANCER**
+
+• we have to create the target group where we have to select the two insatance we have create then we have to go to helath check edited option which was present below the load balancer is create ,then edit it as given below image
+![image](https://github.com/user-attachments/assets/f2faed82-0a34-4a0c-be61-5279f9449245)
 
 
 •after that come to load balancer where we have to select the target group which we have created then make the load balancer , it will look like the given image below .
+![image](https://github.com/user-attachments/assets/d4396eaa-51e6-4d6a-a196-659774c0099c)
 
 
 now put on any one instance write following commands in putty -
 
 htop
-seq 999999999999999999999999999999999999999999999999999999999 > /dev/null &
+seq 99999999999999999999999999999999999999999
+9999999999999999 > /dev/null &
 htop
 Screenshot_2024_1104_183758
 
