@@ -344,6 +344,12 @@ IPV4 CIDR BLOCK: 10.0.0.0/16
 
 
 # 4)create route tables
+ A route table contains a set of rules, called routes that are used to determine where network traffic is directed. Each subnet in your VPC must be associated with a route table; the table controls the routing for the subnet.
+
+Route - 0.0.0.0/0 to IGW
+
+Route - 192.168.0.0/16 to VGW
+
 •Now we have to go to the route table and create 2 route table , one for IGW and another for VGW .
 
 ![image](https://github.com/user-attachments/assets/cc5d46b7-ca45-44b0-a7f0-8313cc23bfb9)
@@ -358,6 +364,7 @@ IPV4 CIDR BLOCK: 10.0.0.0/16
 •then on both instance we have to downlaod the web server here i have downlaoded the apache2 server
 
 -- after that i chech that my instances are working or not .
+![image](https://github.com/user-attachments/assets/b0f982de-f340-45f1-8c75-1077246b2b73)
 
 
 # 6)now we have to create the load balancer
